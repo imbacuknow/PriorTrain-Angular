@@ -1,0 +1,31 @@
+@import "../../../styles/fonts/styles.scss";
+
+.container {
+    background: rgb(206, 218, 41);
+//   background: linear-gradient(to right, #072155, #1a1919);
+  height: 100vh;
+  max-width: 100%;
+}
+
+.card-img-left {
+  width: 45%;
+  /* Link to your background image using in the property below! */
+  background: scroll center url('../.././ref/picture/sk8.jpg');
+  background-size: cover;
+}
+
+.btn-login {
+  font-size: 0.9rem;
+  letter-spacing: 0.05rem;
+  padding: 0.5rem 1rem;
+}
+
+.btn-google {
+  color: white !important;
+  background-color: #ea4335;
+}
+
+.btn-facebook {
+  color: white !important;
+  background-color: #3b5998;
+}
