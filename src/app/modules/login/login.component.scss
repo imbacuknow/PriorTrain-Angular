@@ -1,8 +1,7 @@
 @import "../../../styles/fonts.scss";
 
 .container {
-    background: rgb(206, 218, 41);
-//   background: linear-gradient(to right, #072155, #1a1919);
+  background: rgb(206, 218, 41);
   height: 100vh;
   max-width: 100%;
 }
@@ -10,7 +9,7 @@
 .card-img-left {
   width: 45%;
   /* Link to your background image using in the property below! */
-  background: scroll center url('../.././ref/picture/sk8.jpg');
+  background: scroll center url("../.././ref/picture/sk8.jpg");
   background-size: cover;
 }
 
