@@ -1,9 +1,20 @@
+<!-- <div class="row">
+   <div class="col-12">
+      <form [formGroup]="form" (ngSubmit)="onSubmit()">
+         <input type="text" formControlName="username">
+         <input type="text" formControlName="password">
+         <button type="submit">Login</button>
+      </form>
+   </div>
+</div> -->
+<!-- <app-table [dataSource]="mockData"></app-table>
+<app-table ></app-table> -->
+
 <div class="container">
    <div class="row">
       <div class="d-flex justify-content-center align-items-center col-5 mx-auto vh-100">
          <div class="card flex-row my-5 border-0 shadow rounded overflow-hidden w-100">
             <div class="card-img-left">
-               <!-- Background image for card set in CSS! -->
             </div>
             <div class="card-body p-5">
                <h1 class="card-title text-center mb-5">Login</h1>
@@ -20,7 +31,7 @@
                      <button class="btn-primary text-uppercase form-control" type="submit">Login</button>
                   </div>
 
-                  <a class="d-block text-center mt-2 medium">Don't have an account? Sign Up</a>
+                  <a class="d-block text-center mt-2 medium" routerLink="/register">Don't have an account? Sign Up</a>
 
                   <hr class="my-4">
                </form>
