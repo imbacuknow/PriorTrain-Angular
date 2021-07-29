@@ -1,48 +1,57 @@
 <div class="container">
   <div class="row justify-content-center">
     <div class="col-md-8">
-			
       <div class="row my-5 justify-content-center">
         <div class="col-md-4 rounded" style="background: white">
           <div class="card-body px-5">
-
             <h1 class="card-title text-center my-4">Register</h1>
-            <form class="align-items-center justify-content-center">
-              <div class="mb-3 row justify-content-center">
+            <form
+              class="align-items-center justify-content-center"
+              [formGroup]="form"
+              (ngSubmit)="onSubmit()"
+            >
+              <div class="mt-3 row justify-content-center">
                 <input
                   type="text"
-                  class="form-control col-md-8"
+                  class="form-control col-md-11"
                   placeholder="Firstname"
                   required
                   autofocus
+                  formControlName="firstname"
                 />
               </div>
+							<!-- <span class="text-danger">sadfsd</span> -->
 
-              <div class="mb-3 row justify-content-center">
+              <div class="mt-3 row justify-content-center">
+                <div></div>
                 <input
                   type="text"
-                  class="form-control col-md-8"
+                  class="form-control col-md-11"
                   placeholder="Lastname"
                   required
+                  formControlName="lastname"
                 />
               </div>
 
-              <div class="mb-3 row justify-content-center">
+              <div class="mt-3 row justify-content-center">
+                <div></div>
                 <input
                   type="text"
-                  class="form-control col-md-8"
+                  class="form-control col-md-11"
                   placeholder="Email"
                   required
-                  autofocus
+                  formControlName="email"
                 />
               </div>
 
-              <div class="mb-3 row justify-content-center">
+              <div class="mt-3 row justify-content-center">
+                <div></div>
                 <input
                   type="text"
-                  class="form-control col-md-8"
+                  class="form-control col-md-11"
                   placeholder="Mobile"
                   required
+                  formControlName="mobile"
                 />
               </div>
 
@@ -68,10 +77,10 @@
 
       <!-- Table Component -->
       <div class="row my-5 justify-content-center">
-				<div class="col-md-10">
-					<app-table [dataSource]="mockData"></app-table>
-				</div>
-			</div>
+        <div class="col-md-10">
+          <app-table [dataSource]="mockData"></app-table>
+        </div>
+      </div>
     </div>
   </div>
 </div>
