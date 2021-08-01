@@ -2,7 +2,7 @@
   <div class="row justify-content-center">
     <div class="col-md-8">
       <div class="row my-5 justify-content-center">
-        <div class="col-md-4 rounded" style="background: white">
+        <div class="col-md-6 rounded border card--register">
           <div class="card-body px-5">
             <h1 class="card-title text-center my-4">Register</h1>
             <form
@@ -76,9 +76,9 @@
       </div>
 
       <!-- Table Component -->
-      <div class="row my-5 justify-content-center">
-        <div class="col-md-10">
-          <app-table [dataSource]="mockData"></app-table>
+      <div class="row my-5 justify-content-center card--table">
+        <div class="col-md-12">
+          <app-table [dataSource]="mockData" (recordChange)="setRecord($event)"></app-table>
         </div>
       </div>
     </div>

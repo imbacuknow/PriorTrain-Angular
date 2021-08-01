@@ -1,5 +1,6 @@
 import {MatTableDataSource} from '@angular/material/table';
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
+import {faEdit} from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-table',
@@ -7,12 +8,26 @@ import {Component, Input, OnInit} from '@angular/core';
   styleUrls: ['./table.component.scss'],
 })
 export class TableComponent implements OnInit {
+  faEdit = faEdit;
 
   @Input() dataSource = new MatTableDataSource<[]>();
-  displayedColumns: string[] = ['firstname', 'lastname', 'email', 'mobile'];
+  @Output() recordChange = new EventEmitter();
+
+  displayedColumns: string[] = [
+    'firstname',
+    'lastname',
+    'email',
+    'mobile',
+    'name',
+    'avatar',
+  ];
 
   constructor() {}
 
-  ngOnInit(): void {
+  ngOnInit(): void {}
+
+  editRecord(element: any) {
+    this.recordChange.emit(element);
+    // console.log(element.id);
   }
 }
