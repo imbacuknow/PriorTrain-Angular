@@ -1,4 +1,41 @@
-
 table {
-    width: 100%;
-  }
+  width: 100%;
+  min-width: 1100px;
+}
+
+.register--table {
+  background: rgb(224, 224, 224);
+}
+
+img {
+  width: 100px;
+  height: 100px;
+}
+
+#fa__edit {
+  position: absolute;
+  font-size: 30px;
+  width: 120px;
+  height: 120px;
+  right: -5%;
+  color: rgb(235, 113, 65);
+  cursor: pointer;
+}
+
+.mat-column-avatar:hover #fa__edit {
+  transition: 0.5s;
+  font-size: 35px;
+  right: -4%;
+}
+
+.mat-column-firstname,
+.mat-column-lastname,
+.mat-column-email,
+.mat-column-mobile,
+.mat-column-name {
+  width: 150px;
+}
+
+.mat-column-avatar {
+  width: 110px;
+}

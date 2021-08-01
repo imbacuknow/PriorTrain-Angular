@@ -1,7 +1,10 @@
 @import "/src/styles/fonts.scss";
 
 .container {
-    background: rgb(206, 218, 41);
-    height: 100%;
     max-width: 100%;
+}
+
+.card--register {
+    background: rgb(218, 233, 241);
+    max-width: 420px
 }
