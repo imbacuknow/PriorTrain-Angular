@@ -10,7 +10,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { TableComponent } from './component/table/table.component';
 import { RegisterComponent } from './register/register.component';
 import { MapComponent } from './component/map/map.component';
-
+import { MarkerService } from "./component/map/marker.service";
 
 @NgModule({
   declarations: [
@@ -25,6 +25,7 @@ import { MapComponent } from './component/map/map.component';
     SharedModule,
     FontAwesomeModule,
     ReactiveFormsModule,
-  ]
+  ],
+  providers: [MarkerService]
 })
 export class LoginModule { }

@@ -1,0 +1,62 @@
+{
+    "type": "FeatureCollection",
+    "markers": [
+        {
+            "position": {
+                "pixel_y": 690,
+                "pixel_x": 110
+            }
+        },
+        {
+            "position": {
+                "pixel_y": 1050,
+                "pixel_x": 96
+            }
+        },{
+            "position": {
+                "pixel_y": 1140,
+                "pixel_x": 340
+            }
+        },{
+            "position": {
+                "pixel_y": 1010,
+                "pixel_x": 530
+            }
+        },{
+            "position": {
+                "pixel_y": 1300,
+                "pixel_x": 740
+            }
+        },{
+            "position": {
+                "pixel_y": 690,
+                "pixel_x": 110
+            }
+        },{
+            "position": {
+                "pixel_y": 690,
+                "pixel_x": 110
+            }
+        },{
+            "position": {
+                "pixel_y": 690,
+                "pixel_x": 110
+            }
+        },{
+            "position": {
+                "pixel_y": 690,
+                "pixel_x": 110
+            }
+        },{
+            "position": {
+                "pixel_y": 690,
+                "pixel_x": 110
+            }
+        },{
+            "position": {
+                "pixel_y": 690,
+                "pixel_x": 110
+            }
+        }
+    ]
+}
